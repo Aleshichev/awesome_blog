@@ -11,3 +11,5 @@ class Post(models.Model):
     def get_summary(self):
         return self.text[:250]
 
+    def __str__(self):
+        return self.titel
