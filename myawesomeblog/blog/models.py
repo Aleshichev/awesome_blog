@@ -12,4 +12,4 @@ class Post(models.Model):
         return self.text[:250]
 
     def __str__(self):
-        return self.titel
+        return self.title

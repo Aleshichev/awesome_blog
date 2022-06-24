@@ -1,6 +1,7 @@
 
 <!doctype html>
 <html lang="en">
+{% load static %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -90,7 +91,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="#">About me</a>
+        <a class="nav-link" href="{% static 'About me.txt'%}">About me</a>
                 <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/">Facebook</a>
         <a class="nav-link active"  href="{% url 'showblog' %}">Blog</a>
       </div>
